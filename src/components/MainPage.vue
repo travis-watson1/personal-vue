@@ -53,7 +53,7 @@
                         </p>
                         <p>
                         </p>
-                        <a href="assets/WatsonJamesResume.pdf"
+                        <a href="https://drive.google.com/file/d/1pEiE3PudKG-_Bz867N94_2EeWzsSEs_s/view?usp=sharing"
                             class="btn btn-outline-primary btn-rounded waves-effect text-uppercase resume-width animated pulse infinite">View My
                             Resume</a>
                     </div>
@@ -74,7 +74,7 @@
         data(){
             return{
                 skills: ["Ruby on Rails", "Javascript", "NodeJS", "React", "Bootstrap", "jQuery", "SQL", "Postgresql", "VueJS", "HTML", "CSS", "Git" ],
-                apps: ["Visual Studio", "VS Code", "Atom", "Sublime", "Adobe xD", "pgAdmin4"]
+                apps: ["Visual Studio", "VS Code", "Atom", "Sublime", "Adobe xD", "pgAdmin4", "Slack", "Zoom"]
             }
         }
     }

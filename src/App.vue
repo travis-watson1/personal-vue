@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-<navbar></navbar>
+  <div id="app" style="margin-top: 5%;">
     <img alt="Vue logo" src="./assets/images/navbar_image.png" class="navbar-image">
 <mainpage></mainpage>
 <projects></projects>
@@ -9,7 +8,6 @@
 </template>
 
 <script>
-import Navigation from './components/Navigation.vue'
 import MainPage from './components/MainPage.vue'
 import Projects from './components/Projects.vue'
 import Footer from './components/Footer.vue'
@@ -17,7 +15,6 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'app',
   components: {
-    navbar: Navigation,
     mainpage: MainPage,
     projects: Projects,
     endFooter: Footer

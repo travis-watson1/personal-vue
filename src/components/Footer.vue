@@ -5,8 +5,8 @@
       <mdb-row>
         <mdb-col md="12">
           <div class="mb-5 flex-center">
-            <a class="fb-ic"><i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
-            <a class="li-ic"><i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
+            <a class="fb-ic" href="https://github.com/travis-watson1"><i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i></a>
+            <a class="li-ic" href="https://www.linkedin.com/in/watsonjamest/"><i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i></a>
           </div>
         </mdb-col>
       </mdb-row>
