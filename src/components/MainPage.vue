@@ -44,21 +44,17 @@
                             learning new
                             skills.
                         </p>
-                        <span class="badge badge-primary">Ruby on Rails</span>
-                        <span class="badge badge-primary">Javascript</span>
-                        <span class="badge badge-primary">NodeJS</span>
-                        <span class="badge badge-primary">React</span>
-                        <span class="badge badge-primary">Bootstrap</span>
-                        <span class="badge badge-primary">jQuery</span>
-                        <span class="badge badge-primary">SQL</span>
-                        <span class="badge badge-primary">Postgresql</span>
-                        <span class="badge badge-primary">Vue</span>
+                        <mdb-badge color="primary" v-for="(skill, i) in skills" :key="i">{{skill}}</mdb-badge>
+                        <p>
+
+                        <mdb-badge color="orange" v-for="(app, i) in apps" :key="i">{{app}}</mdb-badge>
+                        </p>
                         <p>
                         </p>
                         <p>
                         </p>
                         <a href="assets/WatsonJamesResume.pdf"
-                            class="btn btn-outline-primary btn-rounded waves-effect text-uppercase resume-width">View My
+                            class="btn btn-outline-primary btn-rounded waves-effect text-uppercase resume-width animated pulse infinite">View My
                             Resume</a>
                     </div>
                 </div>
@@ -69,7 +65,19 @@
 </template>
 
 <script>
-
+    import { mdbBadge } from 'mdbvue';
+    export default {
+        name: 'MainPage',
+        components: {
+            mdbBadge
+        },
+        data(){
+            return{
+                skills: ["Ruby on Rails", "Javascript", "NodeJS", "React", "Bootstrap", "jQuery", "SQL", "Postgresql", "VueJS", "HTML", "CSS", "Git" ],
+                apps: ["Visual Studio", "VS Code", "Atom", "Sublime", "Adobe xD", "pgAdmin4"]
+            }
+        }
+    }
 </script>
 
 <style lang="scss">

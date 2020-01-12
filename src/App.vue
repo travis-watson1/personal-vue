@@ -4,6 +4,7 @@
     <img alt="Vue logo" src="./assets/images/navbar_image.png" class="navbar-image">
 <mainpage></mainpage>
 <projects></projects>
+<end-footer></end-footer>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Navigation from './components/Navigation.vue'
 import MainPage from './components/MainPage.vue'
 import Projects from './components/Projects.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
     navbar: Navigation,
     mainpage: MainPage,
-    projects: Projects
+    projects: Projects,
+    endFooter: Footer
   }
 }
 </script>
