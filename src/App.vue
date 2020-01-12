@@ -1,17 +1,23 @@
 <template>
   <div id="app">
 <navbar></navbar>
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/images/navbar_image.png" class="navbar-image">
+<mainpage></mainpage>
+<projects></projects>
   </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation.vue'
+import MainPage from './components/MainPage.vue'
+import Projects from './components/Projects.vue'
 
 export default {
   name: 'app',
   components: {
-    navbar: Navigation
+    navbar: Navigation,
+    mainpage: MainPage,
+    projects: Projects
   }
 }
 </script>
@@ -28,6 +34,5 @@ $image-path: '~@/../mdb/mdbvue/img';
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

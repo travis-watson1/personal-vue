@@ -1,49 +1,38 @@
 <template>
-  <mdb-navbar color="indigo" dark>
-    <mdb-navbar-brand href="https://mdbootstrap.com/">
-      Navbar
-    </mdb-navbar-brand>
+  <mdb-navbar color="primary" light transparent>
+
     <mdb-navbar-toggler>
-      <mdb-navbar-nav>
-        <mdb-nav-item href="#" active>Home</mdb-nav-item>
-        <mdb-nav-item href="#">Features</mdb-nav-item>
-        <mdb-nav-item href="#">Pricing</mdb-nav-item>
-        <mdb-dropdown tag="li" class="nav-item">
-          <mdb-dropdown-toggle tag="a" navLink color="indigo" slot="toggle" waves-fixed>Dropdown</mdb-dropdown-toggle>
-          <mdb-dropdown-menu>
-            <mdb-dropdown-item>Action</mdb-dropdown-item>
-            <mdb-dropdown-item>Another action</mdb-dropdown-item>
-            <mdb-dropdown-item>Something else here</mdb-dropdown-item>
-          </mdb-dropdown-menu>
-        </mdb-dropdown>
-      </mdb-navbar-nav>
-      <form>
-        <mdb-input type="text" class="text-white" placeholder="Search" aria-label="Search" label navInput waves waves-fixed/>
-      </form>
+        <mdb-navbar-nav left>
+          <mdb-nav-item href="#" active> About</mdb-nav-item>
+          <mdb-nav-item href="#">Portfolio</mdb-nav-item>
+        </mdb-navbar-nav>
+
+        <mdb-navbar-nav right>
+          <mdb-nav-item href="#" active> About</mdb-nav-item>
+          <mdb-nav-item href="#" class="test-text">Portfolio</mdb-nav-item>
+        </mdb-navbar-nav>
     </mdb-navbar-toggler>
   </mdb-navbar>
 </template>
 
 <script>
-  import { mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbDropdown, mdbDropdownMenu, mdbDropdownToggle, mdbInput, mdbDropdownItem } from 'mdbvue';
+  import {
+    mdbNavbar,
+    mdbNavbarToggler,
+    mdbNavbarNav,
+    mdbNavItem
+  } from 'mdbvue';
   export default {
-    name: 'NavbarPage',
     components: {
       mdbNavbar,
-      mdbNavbarBrand,
       mdbNavbarToggler,
       mdbNavbarNav,
-      mdbNavItem,
-      mdbDropdown,
-      mdbDropdownMenu,
-      mdbDropdownToggle,
-      mdbDropdownItem,
-      mdbInput
+      mdbNavItem
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
 
 </style>
