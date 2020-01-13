@@ -2,7 +2,7 @@
     <div>
         <section class="banner-area">
             <div class="container test">
-                <div class="w-100 row fullscreen align-items-center justify-content-between">
+                <div class="w-100 row fullscreen align-items-center justify-content-between" style="margin: 0 !important;">
                     <div class="col-lg-6 col-md-6 banner-left text-center text-md-left">
                         <h6>HI, MY NAME IS</h6>
                         <h1>Travis Watson</h1>
@@ -27,7 +27,7 @@
         </section>
         <section id="about-me">
             <div class="container test">
-                <div class="w-100 row fullscreen align-items-center justify-content-between">
+                <div class="w-100 row fullscreen align-items-center justify-content-between" style="margin: 0 !important;"> 
                     <div class="col-lg-6 col-md-6 banner-right d-flex align-self-center">
                         <img src="../assets/images/main_page2.png" alt="Main Page Image 2" class="w-100 img-fluid">
                     </div>
