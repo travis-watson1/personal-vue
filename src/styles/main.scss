@@ -44,6 +44,13 @@ hr {
     width: 50%;
 }
 
+.nav-button{
+    width: 200px;
+    border: 2px solid #FF8200;
+    background: white;
+    color: black;
+}
+
 
 /* index.html.erb */
 .main-page-image {
@@ -115,27 +122,6 @@ hr {
     height: 150px;
 }
 
-/* Contact Bar */
-
-.contact-bar {
-    height: 4.5%;
-    background-color: #343A40;
-    padding-top: 15px;
-}
-
-.contact-link {
-    padding: 0px 25px;
-}
-
-.contact-images {
-    height: 25px;
-    padding: 0px 20px;
-}
-
-
-
-
-
 .navbar-image {
     max-width: 25%;
     height: auto;
@@ -145,11 +131,6 @@ hr {
 @media (min-width: 1200px) {
     .container {
         max-width: 970px;
-    }
-
-    .navbar-nav>li {
-        padding-left: 60px;
-        padding-right: 60px;
     }
 }
 
@@ -174,72 +155,11 @@ hr {
 
 
 @media (max-width: 767px) {
-    .navbar-brand {
-        position: relative;
-        right: 10px;
-    }
-
-    .navbar-toggler {
-        position: absolute;
-        top: 10px;
-    }
-
-    .navbar-collapse {
-        position: inherit;
-    }
-
     .navbar-image {
         width: 30% !important;
     }
 }
 
-.nav-link{
-    text-decoration: underline #FF8200 !important;
-    font-size: 20px;
-    font-weight: 300;
-
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #58595B;
-}
-
-.navbar-light .nav-item.active .nav-link,
-.navbar-light .nav-item:hover .nav-link {
-    color: #ffffff;
-    background-color: #FF8200;
-}
-
-/* mealplan */
-
-.rounded {
-    border-radius: 30% !important;
-}
-
-.card {
-    margin: 0 auto;
-    /* Added */
-    float: none;
-    /* Added */
-    margin-bottom: 20px;
-    /* Added */
-}
-
-#faq {
-    margin: 3% 0;
-}
-
-#directions {
-    margin: 3% 0;
-}
-
-#accordion {
-    margin: 5% 0;
-}
-
-.margin {
-    margin-bottom: 20px;
-}
 
 /*-------- Start Banner Area ------------*/
 .banner-area {}
@@ -341,69 +261,12 @@ body {
 }
 
 
-.btn-floating {
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 1;
-    vertical-align: middle;
-    display: inline-block;
-    overflow: hidden;
-    transition: all 0.2s ease-in-out;
-    margin: 10px;
-    border-radius: 50%;
-    padding: 0;
-    cursor: pointer;
-    width: 47px;
-    height: 47px;
-}
 
-.btn-floating i {
-    font-size: 1.25rem;
-    line-height: 47px;
-}
-
-.btn-floating i {
-    display: inline-block;
-    width: inherit;
-    text-align: center;
-    color: #fff;
-}
-
-.btn-floating:hover {
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.btn-floating:before {
-    border-radius: 0;
-}
-
-.btn-floating.btn-sm {
-    width: 36.15385px;
-    height: 36.15385px;
-}
-
-.btn-floating.btn-sm i {
-    font-size: 0.96154rem;
-    line-height: 36.15385px;
-}
-
-.btn-floating.btn-lg {
-    width: 61.1px;
-    height: 61.1px;
-}
-
-.btn-floating.btn-lg i {
-    font-size: 1.625rem;
-    line-height: 61.1px;
-}
 
 /* PORTFOLIO SECTION */
 
 
 
-.navbar {
-    box-shadow: none !important;
-}
 
 .portfolio-button-width {
     width: 40%;
@@ -488,6 +351,11 @@ fieldset[disabled] .btn-portfolio.active {
 
     .resume-width {
         width: 100% !important;
+    }
+
+    .nav-button{
+        width: 100px;
+        height: auto;
     }
 }
 

@@ -20,7 +20,7 @@
         <mdb-card-body class="text-center">
           <mdb-card-title>{{img.name}}</mdb-card-title>
           <mdb-card-text>{{img.description}}</mdb-card-text>
-          <mdb-btn color="orange" size="md" class="portfolio-button-width">Live</mdb-btn>
+          <mdb-btn color="orange" size="md" class="portfolio-button-width btn-portfolio">Live</mdb-btn>
           <mdb-btn color="orange" size="md" class="portfolio-button-width btn-portfolio">Github</mdb-btn>
         </mdb-card-body>
       </mdb-card>
