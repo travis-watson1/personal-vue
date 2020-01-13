@@ -60,16 +60,18 @@
                 </div>
             </div>
         </section>
-
+    <projects></projects>
     </div>
 </template>
 
 <script>
     import { mdbBadge } from 'mdbvue';
+    import Projects from './Projects.vue'
     export default {
         name: 'MainPage',
         components: {
-            mdbBadge
+            mdbBadge,
+            projects: Projects
         },
         data(){
             return{

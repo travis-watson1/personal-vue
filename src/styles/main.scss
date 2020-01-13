@@ -45,12 +45,22 @@ hr {
 }
 
 .nav-button{
-    width: 200px;
     border: 2px solid #FF8200;
     background: white;
-    color: black;
 }
 
+a{
+    color: #58595B !important;
+}
+
+.navs-container{
+    margin-top: 45px;
+}
+
+.resources{
+    height: 100vh;
+    margin-top: 5%;
+}
 
 /* index.html.erb */
 .main-page-image {
@@ -352,11 +362,6 @@ fieldset[disabled] .btn-portfolio.active {
     .resume-width {
         width: 100% !important;
     }
-
-    .nav-button{
-        width: 100px;
-        height: auto;
-    }
 }
 
 
@@ -365,5 +370,40 @@ fieldset[disabled] .btn-portfolio.active {
         max-width: 25%;
         height: auto;
         width: 20% !important;
+    }
+}
+
+// Animation
+
+.slide-leave-active {
+    transition: opacity 1s ease;
+    opacity: 0;
+    animation: slide-out 1s ease-out forwards;
+}
+
+.slide-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-enter-active {
+    animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

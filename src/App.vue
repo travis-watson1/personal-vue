@@ -1,35 +1,36 @@
 <template>
   <div id="app" style="margin-top: 5%;">
     <img alt="Vue logo" src="./assets/images/navbar_image.png" class="navbar-image">
-    <div class="container-fluid">
-
-    <ul class="nav nav-pills justify-content-center" style="margin-top: 50px;">
-      <li class="nav-item">
-        <a class="nav-link nav-button active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-button" href="#">Link</a>
-      </li>
-    </ul>
+    <br><br><br><br>
+    <h3>WELCOME</h3>
+    <h5>TO MY SITE</h5>
+    <div class="container navs-container">
+      <ul class="nav nav-pills flex-column flex-sm-row">
+        <li class="flex-sm-fill">
+          <router-link class="text-sm-center nav-link nav-button" :to="{ name: 'home' }" tag="li" active-class="active" exact>
+            <a>Home</a></router-link>
+        </li>
+        <li class="flex-sm-fill">
+          <router-link class="text-sm-center nav-link nav-button" :to="{ name: 'resources' }" tag="li" active-class="active">
+            <a>Resources</a></router-link>
+        </li>
+      </ul>
     </div>
+    <transition name="slide" mode="out-in">
+      <router-view></router-view>
+    </transition>
 
-    <mainpage></mainpage>
-    <projects></projects>
     <end-footer></end-footer>
   </div>
 </template>
 
 <script>
-  import MainPage from './components/MainPage.vue'
-  import Projects from './components/Projects.vue'
   import Footer from './components/Footer.vue'
 
   export default {
     name: 'app',
     components: {
-      mainpage: MainPage,
-      projects: Projects,
-      endFooter: Footer,
+      endFooter: Footer
     }
   }
 </script>
