@@ -1,7 +1,8 @@
 <template>
-    <div class="container-fluid resources">
-        <mdb-btn-toolbar class="justify-content-center">
-            <mdb-btn-group class="mr-2">
+<div style="margin: 10% 0;" class="container-fluid">
+    <br>
+        <h3>Cheat Sheets</h3>
+        <br>
                 <mdb-btn color="blue lighten-4"><a href="https://drive.google.com/file/d/1UiOPGnkvBmkpL6SxPamdkt2RhvLQeIyB/view?usp=sharing" style="color: white !important;">Bootstrap 4</a></mdb-btn>
                 <mdb-btn color="indigo lighten-2"><a href="https://drive.google.com/file/d/1uRwj8Q9XNyWJDF1pIsUYxOok6esHaE5_/view?usp=sharing" style="color: white !important;">SQL</a></mdb-btn>
                 <mdb-btn color="blue lighten-2"><a href="https://drive.google.com/file/d/1PbmOVFCO4uTiJgbMCuf9vjad_P-XlT_e/view?usp=sharing" style="color: white !important;">SQL</a></mdb-btn>
@@ -9,20 +10,16 @@
                 <mdb-btn color="cyan lighten-2"><a href="https://drive.google.com/file/d/10c4EhSPSUKmLMwcQTz8xUTN9Zda4VcQf/view?usp=sharing" style="color: white !important;">Git</a></mdb-btn>
                 <mdb-btn color="teal"><a href="https://drive.google.com/file/d/19fENjQT6lEFjfaiHD_oVVuYbOAMYHIXi/view?usp=sharing" style="color: white !important;">HTML</a></mdb-btn>
                 <mdb-btn color="mdb-color"><a href="https://drive.google.com/file/d/170dSy3jq6M8IY3PZDFZ8PZ1_siRu5MYb/view?usp=sharing" style="color: white !important;">Vue</a></mdb-btn>
-            </mdb-btn-group>
-        </mdb-btn-toolbar>
-    </div>
+</div>
 </template>
 
 
 <script>
-  import { mdbBtn, mdbBtnGroup, mdbBtnToolbar } from 'mdbvue';
+  import { mdbBtn } from 'mdbvue';
   export default {
     name: 'ButtonsGroup',
     components: {
-      mdbBtn,
-      mdbBtnGroup,
-      mdbBtnToolbar
+      mdbBtn
     }
   }
 </script>
