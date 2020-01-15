@@ -1,19 +1,24 @@
 <template>
   <div class="container-fluid resources">
+    <div>
     <h1>Resources</h1>
     <h6>A futile attempt to try and organize my browser's bookmarks.</h6>
     <br><br>
     <mdb-btn-toolbar class="justify-content-center">
       <mdb-btn-group class="mr-2">
-        <mdb-btn v-for="(resource, index) in resources" color="red" :key="index">{{resource.name}}</mdb-btn>
+        <div >
+          <router-link v-for="(resource,index) in resources" :key="index" color="red" :to="resource.linkName" tag="button">{{resource.name}} {{ resource.linkName }}</router-link>
+        </div>
+        <!-- <mdb-btn v-for="(resource, index) in resources" color="red" :key="index">{{resource.name}}</mdb-btn> -->
       </mdb-btn-group>
+    <router-view></router-view>
     </mdb-btn-toolbar>
+    </div>
   </div>
 </template>
 
 <script>
   import {
-    mdbBtn,
     mdbBtnGroup,
     mdbBtnToolbar
   } from 'mdbvue';
@@ -23,15 +28,15 @@
       return {
         resources: [{
             name: 'Ruby on Rails Gems',
-            linkName: 'Gems'
+            linkName: '/resources/gems'
           },
           {
             name: 'Cheat Sheets',
-            linkName: 'cheatSheets'
+            linkName: '/resources/cheatSheets'
           },
           {
             name: 'Design',
-            linkName: 'design'
+            linkName: '/resources/design'
           },
           {
             name: 'Development Tools',
@@ -39,12 +44,11 @@
           },
             {
               name: 'Learning',
-              linkName: 'learning'
+              linkName: '/resources/learning'
             }],
         }
       },
       components: {
-        mdbBtn,
         mdbBtnGroup,
         mdbBtnToolbar
       }
