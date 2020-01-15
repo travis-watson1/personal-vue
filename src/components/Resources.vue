@@ -7,7 +7,7 @@
     <mdb-btn-toolbar class="justify-content-center">
       <mdb-btn-group class="mr-2">
         <div >
-          <router-link v-for="(resource,index) in resources" :key="index" color="red" :to="resource.linkName" tag="button">{{resource.name}} {{ resource.linkName }}</router-link>
+          <router-link v-for="(resource,index) in resources" :key="index" color="red" :to="resource.linkName" tag="button" class="btn btn-primary">{{resource.name}}</router-link>
         </div>
         <!-- <mdb-btn v-for="(resource, index) in resources" color="red" :key="index">{{resource.name}}</mdb-btn> -->
       </mdb-btn-group>

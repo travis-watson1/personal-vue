@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid resources">
         <mdb-tbl>
-            <mdb-tbl-head color="black" textWhite>
+            <mdb-tbl-head color="warning-color-dark" textWhite>
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
@@ -9,10 +9,10 @@
                 </tr>
             </mdb-tbl-head>
             <mdb-tbl-body>
-                <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                <tr v-for="(item, index) in items" :key="index">
+                    <td>{{item.name}}</td>
+                    <td>{{ item.description }}</td>
+                    <td><a :href="item.url">Link</a></td>
                 </tr>
 
             </mdb-tbl-body>
@@ -32,7 +32,7 @@
     export default {
         data() {
             return {
-                gemItems: data
+                items: data
             }
         },
         components: {
