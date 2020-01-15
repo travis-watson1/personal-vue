@@ -71,6 +71,13 @@
             description: "Flixter is a two sided video streaming marketplace platform, featuring credit card payment capabilities, user role management, complex user interfaces and advanced database relationships."
           },
           {
+            url: "https://i.postimg.cc/Gp5cVMfY/stock-trader2.png",
+            name: "Stock Trader",
+            heroku: "http://stock-trader-travis-watson.herokuapp.com",
+            github: "https://github.com/travis-watson1/stock-trader",
+            description: "Stock Trader is a Vue app built using Vuex, vue-router, vue-resource, Bootstrap, and Firebase as a backend database for saving and loading data."
+          },
+          {
             url: "https://i.postimg.cc/2SKmVKXr/note1.png",
             name: "Note",
             heroku: "http://note-app-travis-watson.herokuapp.com",
